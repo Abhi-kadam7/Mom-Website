@@ -1,24 +1,30 @@
 // src/data/gallery.js
 
 export const gallery = [
-  {
-    id: 1,
-    name: "Blouse 1",
-    image: "/gallery/blouse1.jpg",
-  },
-  {
-    id: 2,
-    name: "Blouse 2",
-    image: "/gallery/blouse2.jpg",
-  },
-  {
-    id: 3,
-    name: "Blouse 3",
-    image: "/gallery/blouse3.jpg",
-  },
-  {
-    id: 4,
-    name: "Blouse 4",
-    image: "/gallery/blouse4.jpg",
-  },
-]
+  { id: 1, name: "Blouse 1", image: "/gallery/blouse1.jpg" },
+  { id: 2, name: "Blouse 2", image: "/gallery/blouse2.jpg" },
+  { id: 3, name: "Blouse 3", image: "/gallery/blouse3.jpg" },
+  { id: 4, name: "Blouse 4", image: "/gallery/blouse4.jpg" },
+  { id: 5, name: "Blouse 5", image: "/gallery/blouse5.jpg" },
+  { id: 6, name: "Blouse 6", image: "/gallery/blouse6.jpg" },
+  { id: 7, name: "Blouse 7", image: "/gallery/blouse7.jpg" },
+  { id: 8, name: "Blouse 8", image: "/gallery/blouse8.jpg" },
+  { id: 9, name: "Blouse 9", image: "/gallery/blouse9.jpg" },
+  { id: 10, name: "Blouse 10", image: "/gallery/blouse10.jpg" },
+  { id: 11, name: "Blouse 11", image: "/gallery/blouse11.jpg" },
+  { id: 12, name: "Blouse 12", image: "/gallery/blouse12.jpg" },
+  { id: 13, name: "Blouse 13", image: "/gallery/blouse13.jpg" },
+  { id: 14, name: "Blouse 14", image: "/gallery/blouse14.jpg" },
+  { id: 15, name: "Blouse 15", image: "/gallery/blouse15.jpg" },
+  { id: 16, name: "Blouse 16", image: "/gallery/blouse16.jpg" },
+  { id: 17, name: "Blouse 17", image: "/gallery/blouse17.jpg" },
+  { id: 18, name: "Blouse 18", image: "/gallery/blouse18.jpg" },
+  { id: 19, name: "Blouse 19", image: "/gallery/blouse19.jpg" },
+  { id: 20, name: "Blouse 20", image: "/gallery/blouse20.jpg" },
+  { id: 21, name: "Blouse 21", image: "/gallery/blouse21.jpg" },
+  { id: 22, name: "Blouse 22", image: "/gallery/blouse22.jpg" },
+  { id: 23, name: "Blouse 23", image: "/gallery/blouse23.jpg" },
+  { id: 24, name: "Blouse 24", image: "/gallery/blouse24.jpg" },
+  { id: 25, name: "Blouse 25", image: "/gallery/blouse25.jpg" },
+  { id: 26, name: "Blouse 26", image: "/gallery/blouse26.jpg" },
+];

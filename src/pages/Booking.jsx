@@ -33,11 +33,8 @@ const Booking = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-
-    // 🛑 Bot detection
     if (formData.botField) return
 
-    // 📞 Mobile validation
     const mobileRegex = /^[6-9]\d{9}$/
     if (!mobileRegex.test(formData.mobile)) {
       alert("Please enter a valid 10-digit mobile number")
@@ -63,24 +60,24 @@ Thank you!
   }
 
   return (
-    <div className="min-h-screen px-6 py-12 bg-pink-50 flex justify-center">
+    <div className="min-h-screen px-4 sm:px-6 lg:px-8 py-12 bg-pink-50 flex justify-center">
       <motion.div
         variants={container}
         initial="hidden"
         animate="show"
-        className="w-full max-w-md bg-white rounded-2xl shadow-xl p-8"
+        className="w-full max-w-md sm:max-w-lg bg-white rounded-2xl shadow-xl p-6 sm:p-8"
       >
         {/* Heading */}
         <motion.h2
           variants={field}
-          className="text-3xl font-bold text-pink-700 mb-2 text-center"
+          className="text-2xl sm:text-3xl font-bold text-pink-700 mb-2 text-center"
         >
           Book Appointment
         </motion.h2>
 
         <motion.p
           variants={field}
-          className="text-center text-gray-600 mb-6"
+          className="text-center text-gray-600 mb-6 text-sm sm:text-base"
         >
           Easy booking for perfect fitting 🧵
         </motion.p>
@@ -107,7 +104,7 @@ Thank you!
             placeholder="Your Name"
             value={formData.name}
             onChange={handleChange}
-            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-400 outline-none"
+            className="w-full p-3 text-sm sm:text-base border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-400 outline-none"
           />
 
           <motion.input
@@ -119,7 +116,7 @@ Thank you!
             pattern="[6-9]{1}[0-9]{9}"
             value={formData.mobile}
             onChange={handleChange}
-            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-400 outline-none"
+            className="w-full p-3 text-sm sm:text-base border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-400 outline-none"
           />
 
           <motion.select
@@ -128,7 +125,7 @@ Thank you!
             required
             value={formData.service}
             onChange={handleChange}
-            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-400 outline-none"
+            className="w-full p-3 text-sm sm:text-base border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-400 outline-none"
           >
             <option value="">Select Service</option>
             <option>Blouse Stitching</option>
@@ -139,6 +136,7 @@ Thank you!
             <option>Lehenga Alteration</option>
             <option>Dress Alterations</option>
             <option>Custom Bridal Wear</option>
+            <option>Other</option>
           </motion.select>
 
           <motion.input
@@ -149,7 +147,7 @@ Thank you!
             min={new Date().toISOString().split("T")[0]}
             value={formData.date}
             onChange={handleChange}
-            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-400 outline-none"
+            className="w-full p-3 text-sm sm:text-base border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-400 outline-none"
           />
 
           {/* Submit */}
@@ -158,7 +156,7 @@ Thank you!
             type="submit"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="w-full bg-gradient-to-r from-gray-800 to-gray-900 text-white py-3 rounded-lg font-semibold tracking-wide"
+            className="w-full bg-gradient-to-r from-gray-800 to-gray-900 text-white py-3 rounded-lg font-semibold tracking-wide text-sm sm:text-base"
           >
             Submit via WhatsApp 💬
           </motion.button>

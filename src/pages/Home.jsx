@@ -36,7 +36,7 @@ const container = {
 
 /* Fade + slide */
 const item = {
-  hidden: { opacity: 0, y: 30 },
+  hidden: { opacity: 0, y: 20 },
   show: {
     opacity: 1,
     y: 0,
@@ -49,7 +49,7 @@ const item = {
 
 const Home = () => {
   return (
-    <div className="relative min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-pink-50 to-pink-100 text-center px-4 overflow-hidden">
+    <div className="relative min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-pink-50 to-pink-100 text-center px-4 sm:px-6 overflow-hidden">
 
       {/* Fabric wave */}
       <motion.div
@@ -60,17 +60,17 @@ const Home = () => {
       />
 
       {/* Floating Tailor Icons */}
-      <motion.div {...float} className="absolute top-20 left-8 text-4xl">🧵</motion.div>
-      <motion.div {...float} className="absolute top-40 right-14 text-4xl">✂️</motion.div>
-      <motion.div {...float} className="absolute bottom-44 left-16 text-4xl">👗</motion.div>
-      <motion.div {...rotate} className="absolute bottom-24 right-24 text-4xl">🧶</motion.div>
+      <motion.div {...float} className="absolute top-16 left-4 text-3xl sm:text-4xl">🧵</motion.div>
+      <motion.div {...float} className="absolute top-36 right-6 text-3xl sm:text-4xl">✂️</motion.div>
+      <motion.div {...float} className="absolute bottom-40 left-6 text-3xl sm:text-4xl">👗</motion.div>
+      <motion.div {...rotate} className="absolute bottom-24 right-16 text-3xl sm:text-4xl">🧶</motion.div>
 
       {/* Measuring Tape */}
       <motion.div
-        initial={{ x: -200, opacity: 0 }}
+        initial={{ x: -150, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ delay: 1.2, duration: 1 }}
-        className="absolute top-1/2 left-0 text-3xl"
+        className="absolute top-1/2 left-0 text-2xl sm:text-3xl"
       >
         📏
       </motion.div>
@@ -84,21 +84,21 @@ const Home = () => {
       >
         <motion.h1
           variants={item}
-          className="text-4xl md:text-5xl font-bold text-pink-700 drop-shadow"
+          className="text-3xl sm:text-4xl md:text-5xl font-bold text-pink-700 drop-shadow"
         >
           Ladies Tailoring Services
         </motion.h1>
 
         <motion.h2
           variants={item}
-          className="text-xl mt-2 text-gray-700"
+          className="text-lg sm:text-xl mt-2 text-gray-700"
         >
           महिला शिवणकाम सेवा
         </motion.h2>
 
         <motion.p
           variants={item}
-          className="max-w-xl mt-4 text-gray-600"
+          className="max-w-xs sm:max-w-md mt-4 text-gray-600 text-sm sm:text-base"
         >
           Perfect fitting, quality stitching & on-time delivery.
           <br />
@@ -108,13 +108,13 @@ const Home = () => {
         {/* Buttons */}
         <motion.div
           variants={item}
-          className="flex gap-4 mt-6 justify-center"
+          className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 justify-center"
         >
           <motion.a
             whileHover={{ scale: 1.08, boxShadow: "0 0 25px rgba(236,72,153,0.6)" }}
             whileTap={{ scale: 0.95 }}
             href="/booking"
-            className="bg-pink-600 text-white px-6 py-3 rounded-full shadow-lg"
+            className="bg-pink-600 text-white px-6 py-3 rounded-full shadow-lg text-sm sm:text-base"
           >
             Book Appointment
           </motion.a>
@@ -122,8 +122,8 @@ const Home = () => {
           <motion.a
             whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.95 }}
-            href="tel:9876543210"
-            className="bg-gray-800 text-white px-6 py-3 rounded-full shadow-lg"
+            href="tel:9834720328"
+            className="bg-gray-800 text-white px-6 py-3 rounded-full shadow-lg text-sm sm:text-base"
           >
             Call Now
           </motion.a>
@@ -135,7 +135,7 @@ const Home = () => {
         initial={{ scaleX: 0 }}
         animate={{ scaleX: 1 }}
         transition={{ delay: 1.6, duration: 1.4 }}
-        className="origin-left mt-10 h-[2px] w-[65%] bg-pink-500 rounded"
+        className="origin-left mt-10 h-[2px] w-[80%] sm:w-[65%] bg-pink-500 rounded"
       />
 
       {/* Dress Reveal */}
@@ -143,7 +143,7 @@ const Home = () => {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 2 }}
-        className="absolute bottom-16 text-6xl"
+        className="absolute bottom-12 sm:bottom-16 text-5xl sm:text-6xl"
       >
         👚
       </motion.div>
@@ -153,7 +153,7 @@ const Home = () => {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 1.8, type: "spring", stiffness: 50 }}
-        className="absolute -bottom-36 -right-36 w-96 h-96 bg-pink-300 rounded-full opacity-30"
+        className="absolute -bottom-36 -right-28 sm:-right-36 w-72 sm:w-96 h-72 sm:h-96 bg-pink-300 rounded-full opacity-30"
       />
     </div>
   )
