@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { NavLink } from "react-router-dom"
-import { MenuIcon, XMarkIcon } from "@heroicons/react/24/solid"
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid"
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -51,7 +52,7 @@ const Navbar = () => {
               {isOpen ? (
                 <XMarkIcon className="w-6 h-6" />
               ) : (
-                <MenuIcon className="w-6 h-6" />
+                <Bars3Icon className="h-6 w-6" />
               )}
             </button>
           </div>

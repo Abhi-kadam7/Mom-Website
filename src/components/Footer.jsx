@@ -1,5 +1,4 @@
-import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa"
-
+import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa"
 const Footer = () => {
   return (
     <footer className="bg-pink-600 text-white mt-10">
