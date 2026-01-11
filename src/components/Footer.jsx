@@ -1,4 +1,5 @@
-import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa"
+import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa"
+
 const Footer = () => {
   return (
     <footer className="bg-pink-600 text-white mt-10">
@@ -9,7 +10,7 @@ const Footer = () => {
         </p>
 
         {/* Social Icons */}
-        <div className="flex gap-4 mt-4 md:mt-0">
+        <div className="flex gap-4 mt-4 md:mt-0 text-xl">
           <a
             href="https://www.facebook.com"
             target="_blank"
@@ -18,6 +19,7 @@ const Footer = () => {
           >
             <FaFacebookF />
           </a>
+
           <a
             href="https://www.instagram.com"
             target="_blank"
@@ -26,6 +28,7 @@ const Footer = () => {
           >
             <FaInstagram />
           </a>
+
           <a
             href="https://wa.me/917767884217"
             target="_blank"
