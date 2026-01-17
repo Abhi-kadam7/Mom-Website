@@ -1,4 +1,8 @@
 import { motion } from "framer-motion"
+import { Link } from "react-router-dom"
+
+/* Create motion-enabled Link */
+const MotionLink = motion(Link)
 
 /* Floating animation */
 const float = {
@@ -59,7 +63,7 @@ const Home = () => {
         transition={{ duration: 2 }}
       />
 
-      {/* Floating Tailor Icons */}
+      {/* Floating Icons */}
       <motion.div {...float} className="absolute top-16 left-4 text-3xl sm:text-4xl">🧵</motion.div>
       <motion.div {...float} className="absolute top-36 right-6 text-3xl sm:text-4xl">✂️</motion.div>
       <motion.div {...float} className="absolute bottom-40 left-6 text-3xl sm:text-4xl">👗</motion.div>
@@ -110,15 +114,17 @@ const Home = () => {
           variants={item}
           className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 justify-center"
         >
-          <motion.a
+          {/* ✅ FIXED: React Router navigation */}
+          <MotionLink
+            to="/booking"
             whileHover={{ scale: 1.08, boxShadow: "0 0 25px rgba(236,72,153,0.6)" }}
             whileTap={{ scale: 0.95 }}
-            href="/booking"
             className="bg-pink-600 text-white px-6 py-3 rounded-full shadow-lg text-sm sm:text-base"
           >
             Book Appointment
-          </motion.a>
+          </MotionLink>
 
+          {/* External / phone link is OK */}
           <motion.a
             whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.95 }}
