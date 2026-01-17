@@ -31,7 +31,7 @@ const Navbar = () => {
             to="/"
             className="text-lg md:text-2xl font-bold tracking-wide hover:text-pink-200 transition"
           >
-            Shree Swami Samarth Tailor Shop
+श्री स्वामी समर्थ टेलर शॉप
           </NavLink>
 
           {/* Desktop Menu */}
